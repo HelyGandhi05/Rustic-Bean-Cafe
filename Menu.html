@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Rustic Bean Café</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #d3c4ab;
+    }
+
+    .navbar {
+      justify-content: center;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .navbar-nav .nav-link {
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.3rem;
+    }
+
+    .navbar-nav {
+      margin: 0 auto;
+    }
+
+    .welcome-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #d3c4ab;
+      color: #5c4033;
+      font-family: 'Georgia', serif;
+      padding: 40px 20px;
+      margin: 0;
+    }
+
+    .logo-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid #7a4b3b;
+      background-color: #fff;
+      padding: 5px;
+      margin-right: 40px;
+    }
+
+    .welcome-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: bold;
+      margin: 0;
+      position: relative;
+    }
+
+    .welcome-heading::after {
+      content: '';
+      display: block;
+      width: 60%;
+      height: 4px;
+      background: #7a4b3b;
+      margin: 12px auto 0;
+      border-radius: 2px;
+    }
+
+    h1 {
+      color: #4b2e2e;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 2.8rem;
+      font-weight: bold;
+      position: relative;
+
+    }
+
+    .our-story h2 {
+      color: #3E2B2B;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      position: relative;
+      text-align: center;
+      /* Centers the heading */
+    }
+
+    .our-story h2::after {
+      content: '';
+      display: block;
+      width: 60%;
+      height: 4px;
+      background: #7a4b3b;
+      margin: 12px auto 0;
+      border-radius: 2px;
+    }
+
+    .our-story p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.1rem;
+      color: #5c4033;
+      line-height: 1.6;
+    }
+
+    .table {
+      background-color: #f2e4d5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="welcome-section">
+    <img src="logo.png" class="logo-img" alt="Cafe Logo">
+    <h1 class="welcome-heading">Welcome to The Rustic Bean Café!</h1>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid justify-content-center">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="About_Us.html">About Us</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="Our_Services.html">Our Services</a>
+          </li>
+
+          <!-- Dropdown Menu for Menu -->
+          <li class="nav-item dropdown mx-4">
+            <a class="nav-link dropdown-toggle" href="Menu.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Menu</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Menu.html#om1">Coffee</a></li>
+              <li><a class="dropdown-item" href="Menu.html#om2">Tea</a></li>
+              <li><a class="dropdown-item" href="Menu.html#om3">Milkshakes</a></li>
+              <li><a class="dropdown-item" href="Menu.html#om4">Sandwiches</a></li>
+              <li><a class="dropdown-item" href="Menu.html#om5">Pizzas</a></li>
+              <li><a class="dropdown-item" href="Menu.html#om6">Fries</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="Gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="Feedback.html">Feedback</a>
+          </li>
+
+          <!-- Dropdown Menu for Contact -->
+          <li class="nav-item dropdown mx-4">
+            <a class="nav-link dropdown-toggle" href="ContactUs.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Contact Us</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="ContactUs.html#registration-form">Registration</a></li>
+              <li><a class="dropdown-item" href="ContactUs.html#reservation-form">Reservation</a></li>
+              <li><a class="dropdown-item" href="ContactUs.html#hiring-form">Hiring Inquiry</a></li>
+              <li><a class="dropdown-item" href="ContactUs.html#preorder-form">Cake Preorder</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <section class="our-story">
+    <h1>Our Menu</h1>
+    <div class="container my-5">
+      <h2 class="text-center mb-4">
+        <a id="om1"
+          style="color: #4b2e2e; font-family: 'Playfair Display', serif; font-weight: bold;margin-bottom: 20px;">
+          COFFEES
+        </a>
+      </h2>
+
+      <div id="coffees-section" class="table-responsive">
+        <table class="table table-bordered text-center align-middle" style="background-color: #f9f0e0;">
+          <thead class="table-dark">
+            <tr>
+              <th>Category</th>
+              <th>Type</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Hot Coffee Rows -->
+            <tr>
+              <td rowspan="10"><strong>Hot Coffee</strong></td>
+              <td>Espresso</td>
+              <td>₹100</td>
+            </tr>
+            <tr>
+              <td>Cappuccino</td>
+              <td>₹120</td>
+            </tr>
+            <tr>
+              <td>Latte</td>
+              <td>₹130</td>
+            </tr>
+            <tr>
+              <td>Mocha</td>
+              <td>₹140</td>
+            </tr>
+            <tr>
+              <td>Americano</td>
+              <td>₹110</td>
+            </tr>
+            <tr>
+              <td>Flat White</td>
+              <td>₹150</td>
+            </tr>
+            <tr>
+              <td>Macchiato</td>
+              <td>₹125</td>
+            </tr>
+            <tr>
+              <td>Ristretto</td>
+              <td>₹130</td>
+            </tr>
+            <tr>
+              <td>Cortado</td>
+              <td>₹135</td>
+            </tr>
+            <tr>
+              <td>Irish Coffee</td>
+              <td>₹160</td>
+            </tr>
+
+            <!-- Cold Coffee Rows -->
+            <tr>
+              <td rowspan="10"><strong>Cold Coffee</strong></td>
+              <td>Iced Americano</td>
+              <td>₹110</td>
+            </tr>
+            <tr>
+              <td>Cold Brew</td>
+              <td>₹140</td>
+            </tr>
+            <tr>
+              <td>Mocha Frappe</td>
+              <td>₹150</td>
+            </tr>
+            <tr>
+              <td>Caramel Frappe</td>
+              <td>₹160</td>
+            </tr>
+            <tr>
+              <td>Vanilla Iced Latte</td>
+              <td>₹145</td>
+            </tr>
+            <tr>
+              <td>Iced Latte</td>
+              <td>₹130</td>
+            </tr>
+            <tr>
+              <td>Chocolate Frappe</td>
+              <td>₹155</td>
+            </tr>
+            <tr>
+              <td>Espresso Tonic</td>
+              <td>₹165</td>
+            </tr>
+            <tr>
+              <td>Coconut Iced Coffee</td>
+              <td>₹175</td>
+            </tr>
+            <tr>
+              <td>Cold Brew Mocha</td>
+              <td>₹180</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+
+    <div class="container my-5">
+      <h2 class="text-center mb-4">
+        <a id="om2"
+          style=" color: #4b2e2e; font-family: 'Playfair Display', serif; font-weight: bold;">
+          TEAS
+        </a>
+      </h2>
+
+      <div id="tea-section" class="table-responsive">
+        <table class="table table-bordered text-center align-middle" style="background-color: #f9f0e0;">
+          <thead class="table-dark">
+            <tr>
+              <th>Category</th>
+              <th>Type</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Normal Tea Rows -->
+            <tr>
+              <td rowspan="6"><strong>Normal Tea</strong></td>
+              <td>Masala Chai</td>
+              <td>₹60</td>
+            </tr>
+            <tr>
+              <td>Ginger Tea</td>
+              <td>₹70</td>
+            </tr>
+            <tr>
+              <td>Mint Tea</td>
+              <td>₹75</td>
+            </tr>
+            <tr>
+              <td>Lemon Tea</td>
+              <td>₹65</td>
+            </tr>
+            <tr>
+              <td>Cardamom Tea</td>
+              <td>₹80</td>
+            </tr>
+            <tr>
+              <td>Black Tea</td>
+              <td>₹60</td>
+            </tr>
+
+            <!-- Iced Tea Rows -->
+            <tr>
+              <td rowspan="6"><strong>Iced Tea</strong></td>
+              <td>Classic Iced Tea</td>
+              <td>₹90</td>
+            </tr>
+            <tr>
+              <td>Lemon Iced Tea</td>
+              <td>₹95</td>
+            </tr>
+            <tr>
+              <td>Peach Iced Tea</td>
+              <td>₹100</td>
+            </tr>
+            <tr>
+              <td>Mint Iced Tea</td>
+              <td>₹105</td>
+            </tr>
+            <tr>
+              <td>Berry Iced Tea</td>
+              <td>₹110</td>
+            </tr>
+            <tr>
+              <td>Green Iced Tea</td>
+              <td>₹120</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+
+
+    <div class="container my-5">
+      <h2 class="text-center mb-4">
+        <a id="om3"
+          style=" color: #4b2e2e; font-family: 'Playfair Display', serif; font-weight: bold;">
+          MILKSHAKES
+        </a>
+      </h2>
+
+      <div id="milkshake-section" class="table-responsive">
+        <table class="table table-bordered text-center align-middle" style="background-color: #f9f0e0;">
+          <thead class="table-dark">
+            <tr>
+              <th>Milkshake</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Chocolate Milkshake</td>
+              <td>₹150</td>
+            </tr>
+            <tr>
+              <td>Vanilla Milkshake</td>
+              <td>₹140</td>
+            </tr>
+            <tr>
+              <td>Strawberry Milkshake</td>
+              <td>₹160</td>
+            </tr>
+            <tr>
+              <td>Mango Milkshake</td>
+              <td>₹170</td>
+            </tr>
+            <tr>
+              <td>Banana Milkshake</td>
+              <td>₹140</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="container my-5">
+      <h2 class="text-center mb-4">
+        <a id="om4"
+          style=" color: #4b2e2e; font-family: 'Playfair Display', serif; font-weight: bold;">
+          SANDWICHES
+        </a>
+      </h2>
+
+      <div id="sandwich-section" class="table-responsive">
+        <table class="table table-bordered text-center align-middle" style="background-color: #f9f0e0;">
+          <thead class="table-dark">
+            <tr>
+              <th>Category</th>
+              <th>Sandwich Type</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Grilled Sandwiches -->
+            <tr>
+              <td rowspan="10"><strong>Grilled Sandwich</strong></td>
+              <td>Grilled Cheese</td>
+              <td>₹120</td>
+            </tr>
+            <tr>
+              <td>Grilled Veggie</td>
+              <td>₹130</td>
+            </tr>
+            <tr>
+              <td>Grilled Paneer</td>
+              <td>₹140</td>
+            </tr>
+            <tr>
+              <td>Grilled Chicken</td>
+              <td>₹150</td>
+            </tr>
+            <tr>
+              <td>Grilled Egg</td>
+              <td>₹130</td>
+            </tr>
+            <tr>
+              <td>Grilled Corn</td>
+              <td>₹120</td>
+            </tr>
+            <tr>
+              <td>Grilled Ham</td>
+              <td>₹145</td>
+            </tr>
+            <tr>
+              <td>Grilled Tandoori</td>
+              <td>₹155</td>
+            </tr>
+            <tr>
+              <td>Grilled Mushroom</td>
+              <td>₹140</td>
+            </tr>
+            <tr>
+              <td>Grilled Mexican</td>
+              <td>₹160</td>
+            </tr>
+
+            <!-- Club Sandwiches -->
+            <tr>
+              <td rowspan="10"><strong>Club Sandwich</strong></td>
+              <td>Chicken Club</td>
+              <td>₹180</td>
+            </tr>
+            <tr>
+              <td>Veg Club</td>
+              <td>₹160</td>
+            </tr>
+            <tr>
+              <td>Egg Club</td>
+              <td>₹170</td>
+            </tr>
+            <tr>
+              <td>Cheese Club</td>
+              <td>₹150</td>
+            </tr>
+            <tr>
+              <td>Tandoori Club</td>
+              <td>₹185</td>
+            </tr>
+            <tr>
+              <td>Paneer Club</td>
+              <td>₹170</td>
+            </tr>
+            <tr>
+              <td>Mushroom Club</td>
+              <td>₹165</td>
+            </tr>
+            <tr>
+              <td>Fish Club</td>
+              <td>₹200</td>
+            </tr>
+            <tr>
+              <td>Spicy Club</td>
+              <td>₹175</td>
+            </tr>
+            <tr>
+              <td>Deluxe Club</td>
+              <td>₹220</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="container my-5">
+      <h2 class="text-center mb-4">
+        <a id="om5"
+          style=" color: #4b2e2e; font-family: 'Playfair Display', serif; font-weight: bold;">
+          PIZZAS
+        </a>
+      </h2>
+
+      <div id="pizza-section" class="table-responsive">
+        <table class="table table-bordered text-center align-middle" style="background-color: #f9f0e0;">
+          <thead class="table-dark">
+            <tr>
+              <th>Pizza</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Margherita</td>
+              <td>₹250</td>
+            </tr>
+            <tr>
+              <td>Veggie Supreme</td>
+              <td>₹300</td>
+            </tr>
+            <tr>
+              <td>Farmhouse</td>
+              <td>₹350</td>
+            </tr>
+            <tr>
+              <td>Pepperoni</td>
+              <td>₹400</td>
+            </tr>
+            <tr>
+              <td>BBQ Chicken</td>
+              <td>₹450</td>
+            </tr>
+            <tr>
+              <td>Cheese Burst</td>
+              <td>₹370</td>
+            </tr>
+            <tr>
+              <td>Seafood Special</td>
+              <td>₹500</td>
+            </tr>
+            <tr>
+              <td>Hawaiian</td>
+              <td>₹420</td>
+            </tr>
+            <tr>
+              <td>Deluxe Veggie</td>
+              <td>₹350</td>
+            </tr>
+            <tr>
+              <td>Chicken Tikka</td>
+              <td>₹460</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+
+
+    <div class="container my-5">
+      <h2 class="text-center mb-4">
+        <a id="om6"
+          style=" color: #4b2e2e; font-family: 'Playfair Display', serif; font-weight: bold;">
+          FRIES
+        </a>
+      </h2>
+
+      <div id="fries-section" class="table-responsive">
+        <table class="table table-bordered text-center align-middle" style="background-color: #f9f0e0;">
+          <thead class="table-dark">
+            <tr>
+              <th>Fries</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Classic Fries</td>
+              <td>₹100</td>
+            </tr>
+            <tr>
+              <td>Cheese Fries</td>
+              <td>₹130</td>
+            </tr>
+            <tr>
+              <td>Garlic Fries</td>
+              <td>₹120</td>
+            </tr>
+            <tr>
+              <td>Masala Fries</td>
+              <td>₹110</td>
+            </tr>
+            <tr>
+              <td>Spicy Fries</td>
+              <td>₹115</td>
+            </tr>
+            <tr>
+              <td>Sweet Potato Fries</td>
+              <td>₹150</td>
+            </tr>
+            <tr>
+              <td>Loaded Fries</td>
+              <td>₹180</td>
+            </tr>
+            <tr>
+              <td>Curly Fries</td>
+              <td>₹140</td>
+            </tr>
+            <tr>
+              <td>BBQ Fries</td>
+              <td>₹160</td>
+            </tr>
+            <tr>
+              <td>Truffle Fries</td>
+              <td>₹200</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>

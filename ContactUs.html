@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | The Rustic Bean Café</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #d3c4ab;
+      color: #5c4033;
+      font-family: 'Georgia', serif;
+    }
+
+    .navbar {
+      justify-content: center;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .navbar-nav .nav-link {
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    .navbar-nav {
+      margin: 0 auto;
+    }
+
+    .welcome-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #d3c4ab;
+      padding: 40px 20px;
+    }
+
+    .logo-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid #7a4b3b;
+      background-color: #fff;
+      padding: 5px;
+      margin-right: 40px;
+    }
+
+    .welcome-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.3rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 60px 0 20px;
+      color: #3E2B2B;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60%;
+      height: 4px;
+      background: #7a4b3b;
+      margin: 12px auto 0;
+      border-radius: 2px;
+    }
+
+    .brown-form {
+      background-color: #4b2e2e;
+      color: white;
+    }
+
+    .brown-form label,
+    .brown-form input,
+    .brown-form textarea,
+    .brown-form .form-check-label {
+      color: white;
+    }
+
+    .brown-form input,
+    .brown-form textarea {
+      background-color: #3a2525;
+      border: 1px solid #795548;
+    }
+
+    .brown-form input::placeholder,
+    .brown-form textarea::placeholder {
+      color: #d8cfcf;
+    }
+
+    .brown-form input:focus,
+    .brown-form textarea:focus {
+      background-color: #4b2e2e;
+      color: white;
+      border-color: #a1887f;
+    }
+
+    .feedback-btn {
+      background-color: #4b2e2e;
+      font-family: 'Playfair Display', serif;
+      transition: all 0.3s ease;
+      padding: 10px 30px;
+      border-radius: 12px;
+      box-shadow: none;
+    }
+
+    .feedback-btn:hover {
+      background-color: #5c3a3a;
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="welcome-section">
+    <img src="logo.png" class="logo-img" alt="Cafe Logo">
+    <h1 class="welcome-heading">Welcome to The Rustic Bean Café!</h1>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid justify-content-center">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="About_Us.html">About Us</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="Our_Services.html">Our Services</a>
+          </li>
+
+          <!-- Dropdown Menu for Menu -->
+          <li class="nav-item dropdown mx-4">
+            <a class="nav-link dropdown-toggle" href="Menu.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Menu</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Menu.html#om1">Coffee</a></li>
+              <li><a class="dropdown-item" href="Menu.html#om2">Tea</a></li>
+              <li><a class="dropdown-item" href="Menu.html#om3">Milkshakes</a></li>
+              <li><a class="dropdown-item" href="Menu.html#om4">Sandwiches</a></li>
+              <li><a class="dropdown-item" href="Menu.html#om5">Pizzas</a></li>
+              <li><a class="dropdown-item" href="Menu.html#om6">Fries</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="Gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="Feedback.html">Feedback</a>
+          </li>
+
+          <!-- Dropdown Menu for Contact -->
+          <li class="nav-item dropdown mx-4">
+            <a class="nav-link dropdown-toggle" href="ContactUs.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Contact Us</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="ContactUs.html#registration-form">Registration</a></li>
+              <li><a class="dropdown-item" href="ContactUs.html#reservation-form">Reservation</a></li>
+              <li><a class="dropdown-item" href="ContactUs.html#hiring-form">Hiring Inquiry</a></li>
+              <li><a class="dropdown-item" href="ContactUs.html#preorder-form">Cake Preorder</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+
+    <!-- Registration -->
+    <section class="our-story">
+      <div class="container mt-5" id="feedback">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="container mt-5">
+          <h2 class="section-title">Registration</h2>
+          <form id="registration-form" action="https://formsubmit.co/hely.satish9a@gmail.com" method="post"
+            class="brown-form p-4 rounded shadow">
+            <div class="mb-3"><label for="name1" class="form-label">Name</label><input type="text" class="form-control"
+                id="name1" required></div>
+            <div class="mb-3"><label for="phone1" class="form-label">Phone Number</label><input type="number"
+                class="form-control" id="phone1" required></div>
+            <div class="mb-3"><label for="email1" class="form-label">Email</label><input type="email"
+                class="form-control" id="email1"></div>
+            <div class="mb-3"><label for="dob1" class="form-label">Birthdate</label><input type="date"
+                class="form-control" id="dob1"></div>
+            <div class="mb-3">
+              <label class="form-label d-block">Gender</label>
+              <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="gender1"
+                  id="g1m"><label class="form-check-label" for="g1m">Male</label></div>
+              <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="gender1"
+                  id="g1f"><label class="form-check-label" for="g1f">Female</label></div>
+            </div>
+            <button type="submit" class="btn btn-success">Send</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </form>
+
+          <!-- Reservation -->
+          <h2 class="section-title">Reservation</h2>
+          <form id="reservation-form" action="https://formsubmit.co/gandhihely2@gmail.com" method="post"
+            class="brown-form p-4 rounded shadow">
+            <div class="mb-3"><label for="name2" class="form-label">Name</label><input type="text" class="form-control"
+                id="name2" required></div>
+            <div class="mb-3"><label for="phone2" class="form-label">Phone Number</label><input type="number"
+                class="form-control" id="phone2" required></div>
+            <div class="mb-3"><label for="email2" class="form-label">Email</label><input type="email"
+                class="form-control" id="email2"></div>
+            <div class="mb-3"><label for="resDate" class="form-label">Reservation Date</label><input type="date"
+                class="form-control" id="resDate"></div>
+            <div class="mb-3"><label for="resTime" class="form-label">Time</label><input type="time"
+                class="form-control" id="resTime"></div>
+            <div class="mb-3"><label for="guests" class="form-label">Number of Guests</label><input type="number"
+                class="form-control" id="guests" required></div>
+            <button type="submit" class="btn btn-success">Send</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </form>
+
+          <!-- Hiring -->
+          <h2 class="section-title">Hiring Inquiry</h2>
+          <form id="hiring-form" action="https://formsubmit.co/hely.satish9a@gmail.com" method="post"
+            enctype="multipart/form-data" class="brown-form p-4 rounded shadow">
+            <div class="mb-3"><label for="name3" class="form-label">Name</label><input type="text" class="form-control"
+                id="name3" required></div>
+            <div class="mb-3"><label for="phone3" class="form-label">Phone Number</label><input type="number"
+                class="form-control" id="phone3" required></div>
+            <div class="mb-3"><label for="email3" class="form-label">Email</label><input type="email"
+                class="form-control" id="email3"></div>
+            <div class="mb-3"><label for="dob3" class="form-label">Birthdate</label><input type="date"
+                class="form-control" id="dob3"></div>
+            <div class="mb-3">
+              <label class="form-label d-block">Gender</label>
+              <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="gender3"
+                  id="g3m"><label class="form-check-label" for="g3m">Male</label></div>
+              <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="gender3"
+                  id="g3f"><label class="form-check-label" for="g3f">Female</label></div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label d-block">Applying For</label>
+              <div class="form-check form-check-inline"><input type="checkbox" id="chef" class="form-check-input"><label
+                  class="form-check-label" for="chef">Chef</label></div>
+              <div class="form-check form-check-inline"><input type="checkbox" id="barista"
+                  class="form-check-input"><label class="form-check-label" for="barista">Barista</label></div>
+              <div class="form-check form-check-inline"><input type="checkbox" id="server"
+                  class="form-check-input"><label class="form-check-label" for="server">Server</label></div>
+            </div>
+            <div class="mb-3"><label for="resume" class="form-label">Upload Resume</label><input type="file" id="resume"
+                class="form-control"></div>
+            <button type="submit" class="btn btn-success">Send</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </form>
+
+          <!-- Online Preorder -->
+          <h2 class="section-title">Online Cake Preorder</h2>
+          <form id="preorder-form" action="https://formsubmit.co/hely.satish9a@gmail.com" method="post"
+            enctype="multipart/form-data" class="brown-form p-4 rounded shadow">
+            <div class="mb-3"><label for="name4" class="form-label">Name</label><input type="text" class="form-control"
+                id="name4" required></div>
+            <div class="mb-3"><label for="phone4" class="form-label">Phone Number</label><input type="number"
+                class="form-control" id="phone4" required></div>
+            <div class="mb-3"><label for="email4" class="form-label">Email</label><input type="email"
+                class="form-control" id="email4"></div>
+            <div class="mb-3"><label for="cakeColor" class="form-label">Cake Color</label><input type="color"
+                class="form-control form-control-color" id="cakeColor"></div>
+            <div class="mb-3"><label for="desc" class="form-label">Description</label><textarea id="desc"
+                class="form-control"></textarea></div>
+            <div class="mb-3"><label for="pickupDate" class="form-label">Pickup Date</label><input type="date"
+                class="form-control" id="pickupDate"></div>
+            <div class="mb-3"><label for="pickupTime" class="form-label">Pickup Time</label><input type="time"
+                class="form-control" id="pickupTime"></div>
+            <button type="submit" class="btn btn-success">Send</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </form>
+
+          <!-- Feedback Button -->
+          <div class="text-center mt-5">
+            <a href="Feedback.html" class="btn btn-lg text-white fw-bold feedback-btn">
+              Leave Your Feedback
+            </a>
+          </div>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

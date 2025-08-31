@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Rustic Bean Café</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #d3c4ab
+    }
+
+    .navbar {
+      justify-content: center;
+    }
+
+    .navbar-nav .nav-link {
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    .navbar-nav {
+      margin: 0 auto;
+    }
+
+    .welcome-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #d3c4ab;
+      /* Off white background */
+      color: #5c4033;
+      font-family: 'Georgia', serif;
+      padding: 40px 20px;
+      margin: 0;
+    }
+
+    .logo-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid #7a4b3b;
+      background-color: #fff;
+      padding: 5px;
+      margin-right: 40px;
+    }
+
+    .welcome-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: bold;
+      margin: 0;
+      position: relative;
+      color: #5c4033;
+      /* Heading color */
+    }
+
+    .welcome-heading::after {
+      content: '';
+      display: block;
+      width: 60%;
+      height: 4px;
+      background: #7a4b3b;
+      /* Underline color */
+      margin: 12px auto 0;
+      border-radius: 2px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: #7a4b3b;
+      text-align: center;
+      position: relative;
+      font-size: 2rem;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      width: 60%;
+      height: 4px;
+      background: #7a4b3b;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .image-section img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .image-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .image-section img {
+      max-width: 48%;
+      /* Makes sure two images stay side by side on larger screens */
+    }
+
+    @media (max-width: 768px) {
+      .image-section img {
+        max-width: 100%;
+        /* Ensures images are full width on smaller screens */
+      }
+    }
+
+    .section-title {
+      font-size: 1.75rem;
+      /* Reduced size for section titles */
+      text-decoration: none;
+      /* Ensure there's only one underline */
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .image-section img {
+      width: 100%;
+      /* Ensure images fill their container properly */
+      max-width: 100%;
+      height: auto;
+    }
+
+    h1 {
+      color: #4b2e2e;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 2.8rem;
+      font-weight: bold;
+      position: relative;
+
+    }
+
+    h2 {
+      color: #4b2e2e;
+      font-family: 'Times New Roman', serif;
+      text-align: center;
+      margin-top: 30px;
+      font-weight: bold;
+      text-decoration: underline;
+
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .about-img {
+      width: 48%;
+      /* Adjust the width for each image */
+      height: auto;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="welcome-section">
+    <img src="logo.png" class="logo-img" alt="Cafe Logo">
+    <h1 class="welcome-heading">Welcome to The Rustic Bean Café!</h1>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid justify-content-center">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="About_Us.html">About Us</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="Our_Services.html">Our Services</a>
+          </li>
+
+          <!-- Dropdown Menu for Menu -->
+          <li class="nav-item dropdown mx-4">
+            <a class="nav-link dropdown-toggle" href="Menu.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Menu</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Menu.html#om1">Coffee</a></li>
+              <li><a class="dropdown-item" href="Menu.html#om2">Tea</a></li>
+              <li><a class="dropdown-item" href="Menu.html#om3">Milkshakes</a></li>
+              <li><a class="dropdown-item" href="Menu.html#om4">Sandwiches</a></li>
+              <li><a class="dropdown-item" href="Menu.html#om5">Pizzas</a></li>
+              <li><a class="dropdown-item" href="Menu.html#om6">Fries</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="Gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="Feedback.html">Feedback</a>
+          </li>
+
+          <!-- Dropdown Menu for Contact -->
+          <li class="nav-item dropdown mx-4">
+            <a class="nav-link dropdown-toggle" href="ContactUs.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Contact Us</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="ContactUs.html#registration-form">Registration</a></li>
+              <li><a class="dropdown-item" href="ContactUs.html#reservation-form">Reservation</a></li>
+              <li><a class="dropdown-item" href="ContactUs.html#hiring-form">Hiring Inquiry</a></li>
+              <li><a class="dropdown-item" href="ContactUs.html#preorder-form">Cake Preorder</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Us Section -->
+  <section class="our-story">
+    <h1>About Us</h1>
+    <div class="container mt-5">
+      <h2 class="section-title">Our Story</h2>
+      <div class="image-row">
+        <img src="ab1.jpg" alt="Café Interior" class="about-img">
+        <img src="ab11.jpg" alt="Coffee Brewing" class="about-img">
+      </div>
+      <p>At The Rustic Bean, we believe that every cup of coffee tells a story, from the carefully sourced beans to the
+        final brewing process. Our journey started with a passion for artisanal coffee and a desire to create a space
+        where friends and families could come together, share stories, and enjoy great drinks. It’s not just about
+        coffee – it’s about the experience and the memories we create with each guest.</p>
+
+      <p> We’ve created a place where time slows down, and every sip invites you to relax and savor the moment. Our café
+        is designed to be a retreat from the fast-paced world, offering a cozy environment where you can unwind, meet
+        new friends, or simply enjoy some quiet time.</p>
+
+      <p>Each visit to The Rustic Bean is more than just about the coffee; it’s about the connections we build with
+        every cup. Whether it’s a first date, a gathering with loved ones, or a peaceful solo moment, we aim to make
+        every visit memorable. Our coffee is crafted with care, and we believe it’s the perfect blend of flavor,
+        atmosphere, and community.</p>
+
+      <p>At The Rustic Bean, we invite you to sit back, enjoy your coffee, and be part of our story.</p>
+
+      <h2 class="section-title">Our Coffee</h2>
+      <div class="image-section text-center">
+        <a href="Menu.html">
+          <img src="ab2.jpg" alt="Coffee Cups" style="max-width: 60%; height: auto; margin-bottom: 20px;">
+        </a>
+      </div>
+      <p>Our baristas are skilled artisans, passionate about delivering the perfect brew every time. With years of
+        experience and a keen eye for detail, they work tirelessly to bring out the best in each coffee bean, respecting
+        its unique characteristics. From grinding to brewing, every step is done with precision, ensuring that each cup
+        delivers a harmonious blend of flavors.</p>
+
+      <p>We believe in building relationships with our coffee farmers, supporting their efforts to grow beans that not
+        only taste exceptional but are also cultivated with respect for the environment. By choosing sustainable
+        practices and fair-trade partnerships, we ensure that every sip you take contributes to a brighter, more
+        sustainable future.</p>
+
+      <p>Whether you're here for a morning pick-me-up, a mid-afternoon refreshment, or an evening treat, The Rustic Bean
+        offers the perfect setting to unwind. Our inviting atmosphere, combined with the warmth of our coffee, makes
+        every visit feel like a special occasion.</p>
+
+      <p>At The Rustic Bean, every cup tells a story—one of quality, passion, and craftsmanship. Join us in celebrating
+        the rich traditions of coffee-making, and experience the difference that care and attention to detail can make.
+      </p>
+
+      <h2 class="section-title">Our Space</h2>
+      <div class="image-section">
+        <img src="ab3.jpg" alt="Café Ambiance">
+      </div>
+      <p>Step inside The Rustic Bean, and you’ll be greeted by a cozy, rustic ambiance that instantly feels like home.
+        With its wooden tables, comfortable seating, and soft lighting, our café is designed to create a warm and
+        inviting atmosphere for all our guests. Whether you’re looking for a quiet spot to enjoy your coffee or a lively
+        space to catch up with friends, we’ve got the perfect corner waiting for you. Our attention to detail in the
+        interior design ensures that every visit feels special and memorable.</p>
+
+      <h2 class="section-title">Sustainability & Community</h2>
+      <div class="image-section">
+        <img src="ab4.jpg" alt="Sustainable Practices">
+      </div>
+      <p>At The Rustic Bean, we take sustainability seriously. From using compostable cups to minimizing waste in every
+        step of our operations, we are committed to making a positive impact on both the environment and our community.
+        We source our coffee beans from farms that prioritize ethical practices and environmental responsibility.
+        Additionally, we believe in supporting local artisans and businesses, fostering a community spirit that extends
+        beyond just serving coffee. By choosing The Rustic Bean, you’re not just enjoying great coffee – you’re also
+        supporting a more sustainable and compassionate world.</p>
+    </div>
+  </section>
+  <!-- Footer Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
